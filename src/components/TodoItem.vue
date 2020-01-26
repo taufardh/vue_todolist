@@ -1,5 +1,5 @@
 <template>
-    <div class="list-group-item list-group-item-action" v-bind:class="{'is-complete':todo.completed}">
+    <div v-bind:class="['list-group-item', (todo.completed === true ? 'list-group-item-action' : 'list-group-item-success'), (todo.completed === false ? 'list-group-item-action' : 'list-group-item-danger')]">
         <p>
             <input type="checkbox" v-on:change="markComplete">
             {{todo.title}}
