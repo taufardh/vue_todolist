@@ -1,9 +1,14 @@
 <template>
     <header class="header">
-        <h1>TodoList</h1>
-        <div id="nav">
-            <router-link to="/">Home</router-link> |
-            <router-link to="/about">About</router-link>
+        <div class="container">
+            <nav class="navbar navbar-dark bg-dark">
+                <!-- Navbar content -->
+                <span class="navbar-brand mb-0 h1">TodoList App.</span>
+                <form class="form-inline">
+                    <button class="btn btn-outline-success" type="button"> <router-link to="/">Home</router-link></button>
+                    <button class="btn btn-outline-success" type="button"><router-link to="/about">About</router-link></button>
+                </form>
+            </nav>
         </div>
     </header>
 </template>
@@ -16,10 +21,7 @@ export default {
 
 <style scoped>
     .header {
-        background: #333;
         color: #fff;
-        text-align: center;
-        padding: 10px;
     }
 
     .header a {
@@ -27,16 +29,5 @@ export default {
         padding-right: 5px;
         text-decoration: none;
     }
-    #nav {
-        padding: 30px;
-    }
-
-    #nav a {
-        font-weight: bold;
-        color: #2c3e50;
-    }
-
-    #nav a.router-link-exact-active {
-        color: #42b983;
-    }
+    
 </style>

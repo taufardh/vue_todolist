@@ -10,6 +10,8 @@
 import Todos from '../components/Todos';
 import AddTodo from '../components/AddTodo';
 import axios from 'axios';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default {
   name: 'home',
@@ -60,16 +62,5 @@ export default {
     line-height: 1.4;
   }
 
-  .btn {
-    display: inline-block;
-    border: none;
-    background: #555;
-    color: #fff;
-    padding: 7px 20px;
-    cursor: pointer;
-  }
 
-  .btn:hover {
-    background: #666;
-  }
 </style>
